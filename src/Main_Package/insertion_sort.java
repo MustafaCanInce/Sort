@@ -13,10 +13,22 @@ public class insertion_sort {
     }
 
     void InsertionSort (int [] arr){
+        int array_length = arr.length;
 
+        for (int i = 1; i < array_length; i++){
+            int key = arr[i];
+            int k = i -1;
+
+            while (k >= 0 && arr[k] > key){
+                arr[k + 1] = arr[k];
+                k = k - 1;
+            }
+            arr[k + 1] = key;
+
+        }
 
     }
-    
+
 
 
     void PrintArray(int []arr){

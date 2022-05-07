@@ -8,7 +8,7 @@ package Main_Package;
 
 public class Test {
 
-    public static void main(String[] args){
+    public static void main(String []args){
 
         // Bubble Sort Algorithms for int array version
         {
@@ -64,11 +64,28 @@ public class Test {
 
             can.setInsertionSort_Time(stopTime / 1000000 - startTime / 1000000);
 
-            System.out.println("Selection Sort : " + can.getInsertionSort_Time() + " Seconds");
+            System.out.println("Insertion Sort : " + can.getInsertionSort_Time() + " Seconds");
         }
-        //
-        {
 
+        //Merge Sort Algorithms for int array version
+        {
+            merge_sort can = new merge_sort();
+            int[] array = {5, 20, 40, 80, 8, 1, 0, 19, 66, 88, 11, 12};
+            //System.out.println("Before Sort : ");
+            //can.PrintArray(array);
+
+            double startTime = System.nanoTime();
+            can.MergeSort(array);
+            double stopTime = System.nanoTime();
+
+            //System.out.println("Sorted Array is : ");
+            //can.PrintArray(array);
+
+            can.setMergeSort_Time(stopTime / 1000000 - startTime / 1000000);
+
+            System.out.println("Insertion Sort : " + can.getMergeSort_Time() + " Seconds");
         }
+
+
     }
 }
