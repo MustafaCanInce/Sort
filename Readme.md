@@ -37,3 +37,7 @@ We denote by n the number of elements to be sorted. In the example above, n = 6.
 
 The two nested loops suggest that we are dealing with quadratic time, i.e., a time complexity* of O(n²). 
 This will be the case if both loops iterate to a value that grows linearly with n.
+
+# Reference
+1) https://www.happycoders.eu/algorithms/bubble-sort/#Bubble_Sort_Time_Complexity
+2) https://www.geeksforgeeks.org/bubble-sort/
