@@ -68,24 +68,38 @@ public class Test {
         }
 
         //Merge Sort Algorithms for int array version
-        {
+
             merge_sort can = new merge_sort();
             int[] array = {5, 20, 40, 80, 8, 1, 0, 19, 66, 88, 11, 12};
-            //System.out.println("Before Sort : ");
+            System.out.println("Before Sort : ");
             //can.PrintArray(array);
 
+            for (int i = 0;i < array.length;i++){
+                System.out.print(array[i]);
+            }
+        System.out.println();
+            // int arr[], int l, int m, int r
+
+
             double startTime = System.nanoTime();
-            can.MergeSort(array);
+            can.MergeSort(array, 0, array.length/2,array.length - 1);
             double stopTime = System.nanoTime();
 
             //System.out.println("Sorted Array is : ");
             //can.PrintArray(array);
 
-            can.setMergeSort_Time(stopTime / 1000000 - startTime / 1000000);
 
-            System.out.println("Insertion Sort : " + can.getMergeSort_Time() + " Seconds");
+
+
+
+            can.setMerge_Sort_Time(stopTime / 1000000 - startTime / 1000000);
+
+            System.out.println("Merge Sort : " + can.getMerge_Sort_Time() + " Seconds\n");
+        for (int i = 0;i < array.length;i++){
+            System.out.print(array[i]);
+        }
         }
 
 
-    }
+
 }
