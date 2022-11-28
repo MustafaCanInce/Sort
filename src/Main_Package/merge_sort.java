@@ -12,14 +12,17 @@ public class merge_sort {
     }
 
 
-    void MergeSort(int arr[], int l, int m, int r){
-// Find sizes of two subarrays to be merged
+
+
+    void Merge_sort(int arr[], int l, int m, int r)
+    {
+        // Find sizes of two subarrays to be merged
         int n1 = m - l + 1;
         int n2 = r - m;
 
         /* Create temp arrays */
-        int[] L = new int[n1];
-        int[] R = new int[n2];
+        int L[] = new int[n1];
+        int R[] = new int[n2];
 
         /*Copy data to temp arrays*/
         for (int i = 0; i < n1; ++i)
@@ -59,5 +62,38 @@ public class merge_sort {
             j++;
             k++;
         }
+    }
+
+    // Main function that sorts arr[l..r] using
+    // merge()
+    void sort(int arr[], int l, int r)
+    {
+        if (l < r) {
+            // Find the middle point
+            int m = l + (r - l) / 2;
+
+            // Sort first and second halves
+            sort(arr, l, m);
+            sort(arr, m + 1, r);
+
+            // Merge the sorted halves
+            Merge_sort(arr, l, m, r);
+        }
+    }
+    static void printArray(int arr[])
+    {
+        int n = arr.length;
+        for (int i = 0; i < n; ++i)
+            System.out.print(arr[i] + " ");
+        System.out.println();
+    }
+
+
+    static int[] myfunc(int size) {
+        int[] arr = new int[size]; // between [] array's length
+        for (int i = 0; i < size; i++) {
+            arr[i] = (int) (Math.random() * 100 + 1);
+        }
+         return arr;
     }
 }

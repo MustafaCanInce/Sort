@@ -27,10 +27,12 @@ public class selection_sort {
         }
     }
 
-    void PrintArray(int []arr){
-        int arrray_length = arr.length;
-        for (int i = 0; i < arrray_length; i++){
-            System.out.println(arr[i]);
-        }
+    static void printArray(int[] arr, int size)
+    {
+        for (int i = 0; i < size; i++)
+            System.out.print(arr[i] + " ");
+
+        System.out.println();
     }
+
 }
