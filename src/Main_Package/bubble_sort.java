@@ -4,6 +4,16 @@ public class bubble_sort {
 
     private double BubbleSort_Time;
 
+    private double[] all_BubbleSort_Time;
+
+    public double[] getAll_BubbleSort_Time() {
+        return all_BubbleSort_Time;
+    }
+
+    public void setAll_BubbleSort_Time(double[] all_BubbleSort_Time) {
+        this.all_BubbleSort_Time = all_BubbleSort_Time;
+    }
+
     public double getBubbleSort_Time() {
         return BubbleSort_Time;
     }
@@ -28,6 +38,13 @@ public class bubble_sort {
     }
 
     static void printArray(int[] arr, int size)
+    {
+        for (int i = 0; i < size; i++)
+            System.out.print(arr[i] + " ");
+
+        System.out.println();
+    }
+    static void printArray(double[] arr, int size)
     {
         for (int i = 0; i < size; i++)
             System.out.print(arr[i] + " ");

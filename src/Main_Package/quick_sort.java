@@ -4,6 +4,16 @@ public class quick_sort {
 
     private double QuickSort_Time;
 
+    private double[] all_QuickSort_Time;
+
+    public double[] getAll_QuickSort_Time() {
+        return all_QuickSort_Time;
+    }
+
+    public void setAll_QuickSort_Time(double[] all_QuickSort_Time) {
+        this.all_QuickSort_Time = all_QuickSort_Time;
+    }
+
     public double getQuickSort_Time() {
         return QuickSort_Time;
     }

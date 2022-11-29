@@ -4,6 +4,16 @@ public class selection_sort {
 
     private double SelectionSort_Time;
 
+    private double[] all_SelectionSort_Time;
+
+    public double[] getAll_SelectionSort_Time() {
+        return all_SelectionSort_Time;
+    }
+
+    public void setAll_SelectionSort_Time(double[] all_SelectionSort_Time) {
+        this.all_SelectionSort_Time = all_SelectionSort_Time;
+    }
+
     public double getSelectionSort_Time() {
         return SelectionSort_Time;
     }

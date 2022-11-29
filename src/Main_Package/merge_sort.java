@@ -4,6 +4,16 @@ public class merge_sort {
 
     private double MergeSort_Time;
 
+    private double[] all_MergeSort_Time;
+
+    public double[] getAll_MergeSort_Time() {
+        return all_MergeSort_Time;
+    }
+
+    public void setAll_MergeSort_Time(double[] all_MergeSort_Time) {
+        this.all_MergeSort_Time = all_MergeSort_Time;
+    }
+
     public void setMerge_Sort_Time(double merge_sort_time) {
         MergeSort_Time = merge_sort_time;
     }

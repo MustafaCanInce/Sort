@@ -4,6 +4,16 @@ public class insertion_sort {
 
     private double InsertionSort_Time;
 
+    private double[] all_InsertionSort_Time;
+
+    public double[] getAll_InsertionSort_Time() {
+        return all_InsertionSort_Time;
+    }
+
+    public void setAll_InsertionSort_Time(double[] all_InsertionSort_Time) {
+        this.all_InsertionSort_Time = all_InsertionSort_Time;
+    }
+
     public double getInsertionSort_Time() {
         return InsertionSort_Time;
     }
